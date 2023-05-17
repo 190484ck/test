@@ -1,19 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "4.67.0"
-    }
-  }
-  backend "http" {}
-}
-
-provider "aws" {
-  region     = ""
-  access_key = ""
-  secret_key = ""
-}
-
 #create vpc
 resource "aws_vpc" "intuitive_vpc" {
   cidr_block = "10.10.0.0/16"
