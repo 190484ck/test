@@ -2,17 +2,29 @@
 
 # Docker steps: Details in Dockerfile in docker folder
 
+Screenshot available in docker folder 
+
 create Dockerfile
 
-Create Image: docker build -t c1 .        ----- dot denotes current directory
+Create Image: 
+              
+                         docker build -t c1 .        ----- dot denotes current directory
 
-show image: docker images
+Show image: 
+            
+                         docker images
 
-create container and start: docker run -i -t --name container1 -p 80:80 c1
+Create container and start: 
 
-show containers: docker ps -a
+                          docker run -i -t --name container1 -p 80:80 c1
 
-push image to docker hub: docker login -u <your-username>
+show containers: 
+
+                          docker ps -a
+
+push image to docker hub: 
+
+                          docker login -u <your-username>
   
                           docker tag c1:latest chandan/c1
   
