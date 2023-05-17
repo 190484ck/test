@@ -3,12 +3,19 @@
 # Docker steps: Details in Dockerfile in docker folder
 
 create Dockerfile
+
 Create Image: docker build -t c1 .        ----- dot denotes current directory
+
 show image: docker images
+
 create container and start: docker run -i -t --name container1 -p 80:80 c1
+
 show containers: docker ps -a
+
 push image to docker hub: docker login -u <your-username>
+  
                           docker tag c1:latest chandan/c1
+  
                           docker push chandan/c1
 
 # Terraform steps: Details in terraform folder
